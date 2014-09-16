@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D477548F-D768-4EF8-810E-735BC2450DD6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>客户端</RootNamespace>
+    <AssemblyName>客户端</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advice.Designer.cs">
+      <DependentUpon>Advice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyze.Designer.cs">
+      <DependentUpon>Analyze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conditionalsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conditionalsearch.Designer.cs">
+      <DependentUpon>Conditionalsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainfunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfunction.Designer.cs">
+      <DependentUpon>Mainfunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Message.Designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newproductinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newproductinfo.Designer.cs">
+      <DependentUpon>Newproductinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Salescurve.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Salescurve.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Changeproductinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changeproductinfo.Designer.cs">
+      <DependentUpon>Changeproductinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statement.Designer.cs">
+      <DependentUpon>Statement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Userinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Userinfo.Designer.cs">
+      <DependentUpon>Userinfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Advice.resx">
+      <DependentUpon>Advice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analyze.resx">
+      <DependentUpon>Analyze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conditionalsearch.resx">
+      <DependentUpon>Conditionalsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfunction.resx">
+      <DependentUpon>Mainfunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newproductinfo.resx">
+      <DependentUpon>Newproductinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salescurve.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Salescurve.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changeproductinfo.resx">
+      <DependentUpon>Changeproductinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statement.resx">
+      <DependentUpon>Statement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userinfo.resx">
+      <DependentUpon>Userinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logintext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\state.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信号满.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信号空.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已连接.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未连接.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\占据的拖动条.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\头像.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\头像逆.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\头像顺.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newpassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skinbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memobg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memobg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memobg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\装饰8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
