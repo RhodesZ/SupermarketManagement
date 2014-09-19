@@ -18,3 +18,6 @@ F:\C++大作业\客户端\客户端\obj\Debug\客户端.advice.resources
 F:\C++大作业\客户端\客户端\obj\Debug\客户端.Peoplemanagement.resources
 F:\C++大作业\客户端\客户端\obj\Debug\客户端.Changeproductinfo.resources
 F:\C++大作业\客户端\客户端\obj\Debug\客户端.Setinnercode.resources
+F:\SupermarketManagement\客户端1.35\客户端\bin\Debug\客户端.exe.config
+F:\SupermarketManagement\客户端1.35\客户端\obj\Debug\客户端.exe
+F:\SupermarketManagement\客户端1.35\客户端\obj\Debug\客户端.pdb
