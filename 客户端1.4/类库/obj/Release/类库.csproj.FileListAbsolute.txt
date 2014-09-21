@@ -1,0 +1,8 @@
+F:\C++大作业\客户端\类库\bin\Release\类库.dll
+F:\C++大作业\客户端\类库\bin\Release\类库.pdb
+F:\C++大作业\客户端\类库\obj\Release\类库.Message1.resources
+F:\C++大作业\客户端\类库\obj\Release\类库.Properties.Resources.resources
+F:\C++大作业\客户端\类库\obj\Release\类库.csproj.GenerateResource.Cache
+F:\C++大作业\客户端\类库\obj\Release\类库.dll
+F:\C++大作业\客户端\类库\obj\Release\类库.pdb
+F:\C++大作业\客户端\类库\obj\Release\类库.csprojResolveAssemblyReference.cache
